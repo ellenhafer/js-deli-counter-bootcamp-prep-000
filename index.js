@@ -19,20 +19,17 @@ function currentLine(x) {
   }
 }
 
-// function takeANumber(katzDeliLine, name) {
-//   katzDeliLine.push(name);
-//   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
-// }
+function takeANumber(katzDeliLine, name) {
+  // add name to end of katzDeliLine
+  katzDeliLine.push(name);
+  // return name's place in line
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+}
 
-// function nowServing() {
-//   if(katzDeliLine.length > 0){
-//     var current = katzDeliLine.splice(0,1);
-//     return `Currently serving ${current}`;
-//   }
-//   else {
-//     return "There is nobody waiting to be served!"
-//   }
-// }
+
+
+
+
 
 // function currentLine() {
 //   if(katzDeliLine.length > 0){
