@@ -6,11 +6,11 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing() {
-  if(katzDeliLine.length === 0){
-    return "There is nobody waiting to be served!"
-  }
-  else {
+  if(katzDeliLine.length > 0){
     var current = katzDeliLine.splice(0,1);
     return `Currently serving ${current}`;
+  }
+  else {
+    return "There is nobody waiting to be served!"
   }
 }
