@@ -26,19 +26,16 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
+function nowServing(x) {
+	// if length of array is 0, return 'there is nobody waiting to be served'
+	if (x.length === 0) {
+		return "There is nobody waiting to be served!";
+	}
+	// otherwise, remove the first person from the line
+	else {
+		var first = x.shift();
+		//return the removed person
+		return `Currently serving ${first}.`;
+	}
+}
 
-
-
-
-
-// function currentLine() {
-//   if(katzDeliLine.length > 0){
-//     for (let i = 0; i < katzDeliLine.length; i++){
-//       if(katzDeliLine.length > 0){
-//         return `The line is currently ${i + 1}. ${katzDeliLine[i]
-//       }
-//     }
-//     var i = 0;
-//     return `The line is currently ${i + 1}. ${katzDeliLine}`
-//   }
-// }
