@@ -12,6 +12,8 @@ function currentLine(x) {
     for(var i = 0; i < x.length; i++) {
       line += `${(i + 1)}. ${x[i]},`;
     }
+    //return everyone in the line
+    return `The line is currently: ${line}`
   }
 }
 
