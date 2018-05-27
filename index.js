@@ -14,3 +14,15 @@ function nowServing() {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine() {
+  if(katzDeliLine.length > 0){
+    for (let i = 0; i < katzDeliLine.length; i++){
+      if(katzDeliLine.length > 0){
+        return `The line is currently ${i + 1}. ${katzDeliLine[i]
+      }
+    }
+    var i = 0;
+    return `The line is currently ${i + 1}. ${katzDeliLine}`
+  }
+}
