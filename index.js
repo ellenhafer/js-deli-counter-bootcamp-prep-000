@@ -1,21 +1,4 @@
-var katzDeliLine = [];
 
-function currentLine(x) {
-  // create blank array to store values
-  var line = [];
-  // if length of array is 0, return "the line is currently empty"
-  if (x.length === 0) {
-    return "The line is currently empty.";
-  } 
-  // otherwise, loop through each value in array and add it to var line
-  else {
-    for(var i = 0; i < x.length; i++) {
-      line += `${(i + 1)}. ${x[i]},`;
-    }
-    //return everyone in the line
-    return `The line is currently: ${line}`
-  }
-}
 
 // function takeANumber(katzDeliLine, name) {
 //   katzDeliLine.push(name);
