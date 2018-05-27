@@ -12,8 +12,8 @@ function currentLine(x) {
     for(var i = 0; i < x.length; i++) {
       line += `${(i + 1)}. ${x[i]}, `;
     }
+    // remove the space and comma from the final person in the line
     line = line.slice(0, line.length-2)
-    console.log(line);
     //return everyone in the line
     return `The line is currently: ${line}`
   }
